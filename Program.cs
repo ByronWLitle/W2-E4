@@ -10,7 +10,7 @@ namespace W2_E4
     {
         static void Main(string[] args)
         {
-            //Iniatilize variables to allow for multiple iterations of program
+            //Iniatilize variables to hold values and allow for multiple iterations of program
             int userInput = 0;
             double balance = 1000;
             double deposit = 0;
