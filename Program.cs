@@ -30,22 +30,31 @@ namespace W2_E4
                 //Depending on user input will determine case
                 switch (userInput)
                 {
-                    //Checking balance
+                    //Checking balance program
                     case 1:
+                        //Writes out balance
                         Console.WriteLine($"Your balance is: {balance}");
                         break;
-                    //Deposit amount then added to reflect new balance
+                    //Deposit program
                     case 2:
+                        //Prompts user how much for deposit
                         Console.Write("Enter deposit amount: ");
+                        //Converts input to double variable
                         deposit = Convert.ToDouble(Console.ReadLine());
-                        balance = deposit + balance;
+                        //Calculate new balance by adding deposit to balance
+                        balance = deposit + balance; 
+                        //Shows user that deposit was successful
                         Console.WriteLine("Deposit successful");
                         break;
-                    //Withdraw amount then subtracted to reflect new balance
+                    //Withdraw program
                     case 3:
+                        //Prompts user how much for withdraw
                         Console.Write("Enter withdraw amount: ");
+                        //Converts input to double variable
                         withdraw = Convert.ToDouble(Console.ReadLine());
-                        balance = balance - withdraw;
+                        //Calculate new balance by subtracting withdraw from balance
+                        balance = balance - withdraw; 
+                        //Shows user that withdraw was successful
                         Console.WriteLine("Withdraw successful");
                         break;
                 }
